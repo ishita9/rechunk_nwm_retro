@@ -1,0 +1,309 @@
+Checking lakeout.zarr against its source files
+<xarray.Dataset>
+Dimensions:         (feature_id: 5783, time: 367439)
+Coordinates:
+  * feature_id      (feature_id) int32 491 531 747 ... 947070204 1021092845
+    latitude        (feature_id) float32 dask.array<chunksize=(5783,), meta=np.ndarray>
+    longitude       (feature_id) float32 dask.array<chunksize=(5783,), meta=np.ndarray>
+  * time            (time) datetime64[ns] 1979-02-01T01:00:00 ... 2020-12-31T...
+Data variables:
+    crs             |S1 ...
+    inflow          (time, feature_id) float64 dask.array<chunksize=(8064, 500), meta=np.ndarray>
+    outflow         (time, feature_id) float64 dask.array<chunksize=(8064, 500), meta=np.ndarray>
+    water_sfc_elev  (time, feature_id) float32 dask.array<chunksize=(8064, 500), meta=np.ndarray>
+Attributes:
+    Conventions:                  CF-1.6
+    TITLE:                        OUTPUT FROM WRF-Hydro v5.2.0-beta2
+    code_version:                 v5.2.0-beta2
+    featureType:                  timeSeries
+    model_configuration:          retrospective
+    model_output_type:            reservoir
+    proj4:                        +proj=lcc +units=m +a=6370000.0 +b=6370000....
+    reservoir_assimilated_value:  Assimilation not performed
+    reservoir_type:               1 = level pool everywhere
+    station_dimension:            lake_id
+
+Checking a random time in chunk #46 (of 46)...
+
+Check (non-time) static variables once
+Checking variable: crs
+Checking variable: feature_id
+Checking variable: inflow
+Checking variable: latitude
+Checking variable: longitude
+Checking variable: outflow
+Checking variable: water_sfc_elev
+Checking time: 2020-10-06T08:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #45 (of 46)...
+Checking time: 2020-01-12T15:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #44 (of 46)...
+Checking time: 2019-05-13T00:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #43 (of 46)...
+Checking time: 2018-02-28T04:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #42 (of 46)...
+Checking time: 2017-01-02T12:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #41 (of 46)...
+Checking time: 2015-12-20T23:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #40 (of 46)...
+Checking time: 2015-01-20T20:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #39 (of 46)...
+Checking time: 2014-07-07T08:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #38 (of 46)...
+Checking time: 2013-07-24T04:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #37 (of 46)...
+Checking time: 2012-10-14T14:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #36 (of 46)...
+Checking time: 2011-11-29T08:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #35 (of 46)...
+Checking time: 2010-08-13T11:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #34 (of 46)...
+Checking time: 2010-03-14T07:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #33 (of 46)...
+Checking time: 2009-01-12T06:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #32 (of 46)...
+Checking time: 2007-08-17T13:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #31 (of 46)...
+Checking time: 2007-02-21T00:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #30 (of 46)...
+Checking time: 2006-01-29T02:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #29 (of 46)...
+Checking time: 2005-03-24T00:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #28 (of 46)...
+Checking time: 2004-01-07T21:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #27 (of 46)...
+Checking time: 2003-03-27T03:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #26 (of 46)...
+Checking time: 2002-09-04T05:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #25 (of 46)...
+Checking time: 2001-04-20T11:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #24 (of 46)...
+Checking time: 2000-11-17T14:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #23 (of 46)...
+Checking time: 1999-11-20T10:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #22 (of 46)...
+Checking time: 1999-03-28T01:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #21 (of 46)...
+Checking time: 1997-10-04T21:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #20 (of 46)...
+Checking time: 1996-12-07T05:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #19 (of 46)...
+Checking time: 1996-06-11T05:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #18 (of 46)...
+Checking time: 1994-10-22T10:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #17 (of 46)...
+Checking time: 1994-07-13T11:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #16 (of 46)...
+Checking time: 1993-03-22T22:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #15 (of 46)...
+Checking time: 1992-01-04T05:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #14 (of 46)...
+Checking time: 1991-11-20T23:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #13 (of 46)...
+Checking time: 1990-12-09T02:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #12 (of 46)...
+Checking time: 1989-07-11T13:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #11 (of 46)...
+Checking time: 1988-12-09T11:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #10 (of 46)...
+Checking time: 1988-03-10T09:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #9 (of 46)...
+Checking time: 1986-12-09T06:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #8 (of 46)...
+Checking time: 1986-02-10T09:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #7 (of 46)...
+Checking time: 1985-03-07T04:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #6 (of 46)...
+Checking time: 1984-07-26T00:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #5 (of 46)...
+Checking time: 1982-11-30T06:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #4 (of 46)...
+Checking time: 1982-07-15T04:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #3 (of 46)...
+Checking time: 1981-06-27T02:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #2 (of 46)...
+Checking time: 1980-02-19T14:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
+
+Checking a random time in chunk #1 (of 46)...
+Checking time: 1979-04-13T13:00:00.000000000
+Checking variable: inflow
+Checking variable: outflow
+Checking variable: water_sfc_elev
