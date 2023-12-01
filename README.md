@@ -1,4 +1,4 @@
-# Rechunking National Water Model v2.1 retrospective simulations to more (cloud-)approachable chunks in Zarr format.
+# Rechunking National Water Model v3.0 retrospective simulations to more (cloud-)approachable chunks in Zarr format.
 Authors: _James McCreight (NCAR), Ishita Srivastava (NCAR), Rich Signell (USGS), and Yongxin Zhang (NCAR)_
 
 
@@ -31,24 +31,6 @@ Six separate zarr stores have been created, corresponding closely to the model o
 
 Additonal detail on these stores (variables contained and space-time information) is provided in the data description section 
 below and via accompanying notebooks.
-
-
-## Data Access
-
-### Cloud on AWS
-[Landing page](https://registry.opendata.aws/nwm-archive/)  
-[NWM v2.1 Zarr Bucket](https://noaa-nwm-retrospective-2-1-zarr-pds.s3.amazonaws.com/index.html)  
-
-### NCAR glade
-For those with access to NCAR computing resources, these can alternatively be found at the following paths:
-```
-/glade/campaign/ncar/USGS_Water/NWMV21_retro_zarr/lakeout.zarr
-/glade/campaign/ncar/USGS_Water/NWMV21_retro_zarr/gwout.zarr
-/glade/campaign/ncar/USGS_Water/NWMV21_retro_zarr/chrtout.zarr
-/glade/campaign/ncar/USGS_Water/NWMV21_retro_zarr/precip.zarr
-/glade/campaign/ncar/USGS_Water/NWMV21_retro_zarr/ldasout.zarr
-/glade/campaign/ncar/USGS_Water/NWMV21_retro_zarr/rtout.zarr
-```
 
 
 ## Data Description
