@@ -21,9 +21,9 @@ Rich Signell (USGS) first applied rechunker to the NWM CHRTOUT (streamflow model
 [analysis notebook](https://nbviewer.org/gist/rsignell-usgs/78a4ce00360c65bc99764aa3e88a2493).
 
 Following on this success, both NOAA's Office of Water Prediction and NCAR were interested in doing something similar for the next version
-of the NWM retrospective run. For NWM version 2.1, the task of rechunking the full retrospective on NCAR computing resources (where
+of the NWM retrospective run. For NWM version 3.0, the task of rechunking the full retrospective on NCAR computing resources (where
 the model runs were performed) is expressed in this repository. This included 4 other output file types, including gridded land surface model data and 
-terrain/subsurface routing data. Also rechunked were the input/forcing precipitation data (just one variable from the full forcing data). 
+terrain/subsurface routing data. Also rechunked were the input/forcing data. 
 
 
 ## Status and looking forward
@@ -46,14 +46,34 @@ Finally, we maintained the storage integer types and `scale_factor` and `add_off
 
 ## Code Overview
 
-There is  a directory for each file type
+There is  a directory for each file type for Alaska, Hawaii and Puerto Rico domains
 
 ```
 
 lakeout/
 gwout/
 chrtout/
-precip/
+forcing/
+ldasout/
+rtout/
+```
+
+For CONUS, the forcing is split into each variable type, so there is a different zarr store for every forcing variable
+
+```
+
+lakeout/
+gwout/
+chrtout/
+lqfrac/
+psfc/
+rtout/
+t2d/
+v2d/
+lwdown/
+q2d/
+swdown/
+u2d/
 ldasout/
 rtout/
 ```
