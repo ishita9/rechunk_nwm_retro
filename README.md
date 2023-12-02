@@ -42,7 +42,7 @@ Following zarr stores have been created, corresponding closely to the model outp
 | u2d       | Input u2d fields from the OWP AORC forcing            | Hourly    | 4.2TB  |
 | v2d       | Input v2d fields from the OWP AORC forcing            | Hourly    | 4.2TB  |
 | ldasout   | Output from the NoahMP land surface model             | 3-hourly  | 14TB   |
-| rtout     | Output from the overland and subsurface terrain       | 3-hourly  | Pending|
+| rtout     | Output from the overland and subsurface terrain       | 3-hourly  | 3.5TB  |
 
 ### Alaska
 | Data Type | Description                                          | Frequency | Size   |
