@@ -3,10 +3,16 @@ Authors: _James McCreight (NCAR), Ishita Srivastava (NCAR), Rich Signell (USGS),
 
 
 ## Overview
-The National Water Model (NWM) version 2.1 retrospective simulation spans 42-years (Feb 1979 - Dec 2020). The model
-domain is the continential US. Inputs are hourly and outputs are provided at hourly or 3-hourly resolution. Additional details
-are provided below and in this
-[retrospective overview document](https://github.com/NCAR/rechunk_retro_nwm_v21/blob/main/ancillary/NWMv2.1_42YrRetrospective_OutputVarsFullPhysicsRun.pdf).
+The following table describes the simulation time period, domain and frequency of the inputs for the National Water Model (NWM) version 3.0 retrospective simulation: 
+
+| DOMAIN      | Simulation Time Period| Data Frequency                                                                  | 
+|-------------|-----------------------|---------------------------------------------------------------------------------|
+| CONUS       | Feb 1979 - Feb 2023   | Inputs are hourly and outputs are provided at hourly or 3-hourly resolution     |
+| Alaska      | Jan 1981 - Dec 2019   | Inputs are hourly and outputs are provided at hourly or 3-hourly resolution     |
+| Hawaii      | Jan 1994 - Jan 2014   | Inputs are hourly and outputs are provided at hourly, 15-min, 45-min resolution |
+| Puerto Rico | Jan 2008 - June 2023  | Inputs are hourly and outputs are provided at hourly or 3-hourly resolution     |
+
+Additional details are provided below and in this [retrospective overview document](https://github.com/NCAR/rechunk_retro_nwm_v21/blob/main/ancillary/NWMv2.1_42YrRetrospective_OutputVarsFullPhysicsRun.pdf).
 
 The model writes separate files at each output time. Within those individual files the data are not chunked 
 in space. In the use case of opening a full timeseries at a single point or a sub-region, the user would be required to 
