@@ -25,14 +25,57 @@ Examples of use cases are supplied, including re-rechunking.
 
 
 ## Data overview
-Six separate zarr stores have been created, corresponding closely to the model output files. The time resolution is noted for each product. 
+Following zarr stores have been created, corresponding closely to the model output files. The time resolution is noted for each product. 
 
-* lakeout: Output from the lake model (hourly, 5.5GB)
-* gwout: Output from the groundwater model (hourly, 1.7TB)
-* chrtout: Output from the streamflow model(hourly, 1.4TB)
-* precip: Input precipitation fields from the OWP AORC forcing data set (hourly, 2.0TB)
-* ldasout: Output from the NoahMP land surface model (3-hourly, pending)
-* rtout: Output from the overland and subsurface terrain routing model (3-hourly, pending)
+### CONUS
+| Data Type | Description                                           | Frequency | Size   |
+|-----------|-------------------------------------------------------|-----------|--------|
+| lakeout   | Output from the lake model                            | Hourly    | 5.0GB  |
+| gwout     | Output from the groundwater model                     | Hourly    | 317GB  |
+| chrtout   | Output from the streamflow model                      | Hourly    | 2.9TB  |
+| precip    | Input precipitation fields from the OWP AORC forcing  | Hourly    | 1.3TB  |
+| lwdown    | Input lwdown fields from the OWP AORC forcing         | Hourly    | 7.7TB  |
+| psfc      | Input psfc fields from the OWP AORC forcing           | Hourly    | 8.0TB  |
+| q2d       | Input q2d fields from the OWP AORC forcing            | Hourly    | 4.6TB  |
+| swdown    | Input swdown fields from the OWP AORC forcing         | Hourly    | 3.9TB  |
+| t2d       | Input t2d fields from the OWP AORC forcing            | Hourly    | 4.6TB  |
+| u2d       | Input u2d fields from the OWP AORC forcing            | Hourly    | 4.2TB  |
+| v2d       | Input v2d fields from the OWP AORC forcing            | Hourly    | 4.2TB  |
+| ldasout   | Output from the NoahMP land surface model             | 3-hourly  | Pending|
+| rtout     | Output from the overland and subsurface terrain       | 3-hourly  | Pending|
+
+### Alaska
+| Data Type | Description                                          | Frequency | Size   |
+|-----------|------------------------------------------------------|-----------|--------|
+| lakeout   | Output from the lake model                            | Hourly    | 5.5GB  |
+| gwout     | Output from the groundwater model                     | Hourly    | 1.7TB  |
+| chrtout   | Output from the streamflow model                      | Hourly    | 346GB  |
+| forcing   | Input fields from the OWP AORC forcing                | Hourly    | 2.4TB  |
+| ldasout   | Output from the NoahMP land surface model             | 3-hourly  | 548GB  |
+| rtout     | Output from the overland and subsurface terrain       | 3-hourly  | 46GB   |
+
+### Hawaii
+
+| Data Type | Description                                          | Frequency | Size   |
+|-----------|------------------------------------------------------|-----------|--------|
+| lakeout   | Output from the lake model                            | Hourly    | 31MB  |
+| gwout     | Output from the groundwater model                     | Hourly    | 15GB  |
+| chrtout   | Output from the streamflow model                      | Hourly    | 36GB  |
+| forcing   | Input fields from the OWP AORC forcing                | Hourly    | 444GB |
+| ldasout   | Output from the NoahMP land surface model             | 3-hourly  | 132GB |
+| rtout     | Output from the overland and subsurface terrain       | 3-hourly  | 64GB  |
+
+### Puerto  Rico
+
+| Data Type | Description                                          | Frequency  | Size  |
+|-----------|------------------------------------------------------|------------|-------|
+| lakeout   | Output from the lake model                            | Hourly    | 26MB  |
+| gwout     | Output from the groundwater model                     | Hourly    | 4.3GB |
+| chrtout   | Output from the streamflow model                      | Hourly    | 9.6GB |
+| forcing   | Input fields from the OWP AORC forcing                | Hourly    | 37GB  |
+| ldasout   | Output from the NoahMP land surface model             | 3-hourly  | 28GB  |
+| rtout     | Output from the overland and subsurface terrain       | 3-hourly  | 25GB  |
+
 
 
 Additonal detail on these stores (variables contained and space-time information) is provided in the data description section 
